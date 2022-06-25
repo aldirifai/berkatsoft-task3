@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #edeef3;
+}
+
+section {
+    display: flex !important;
+    align-items: center !important;
+    position: relative;
+}
+
+.height-bg {
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 1rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.col {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+@media (max-width: 720px) {
+    .col {
+        width: 100%;
+        align-items: center !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) * -1);
+    margin-left: calc(var(--bs-gutter-x) * -1);
+}
+.row > * {
+    flex-shrink: 0;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 1);
+    padding-left: calc(var(--bs-gutter-x) * 1);
+    margin-top: var(--bs-gutter-y);
+}
+
+.item-center {
+    align-items: center !important;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 60px;
+    line-height: 1;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+    .title {
+        font-size: 55px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .title {
+        font-size: 45px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .title {
+        font-size: 35px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 575px) {
+    .title {
+        font-size: 30px;
+    }
+}
+.title span:first-child {
+    font-weight: 300;
+    display: block;
+}
+.title span.yellow-shape {
+    position: relative;
+    z-index: 1;
+}
+
+.content p {
+    font-size: 22px;
+    color: #0e1133;
+    padding-right: 130px;
+    line-height: 30px;
+    margin-bottom: 28px;
+    font-weight: normal;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .content p {
+        padding-right: 30px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .content p {
+        padding-right: 0px;
+    }
+}
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .content p {
+        padding-right: 0px;
+    }
+}
+@media (max-width: 575px) {
+    .content p {
+        padding-right: 0px;
+    }
+}
+
+.cta-btn {
+    display: inline-block;
+    height: 50px;
+    line-height: 52px;
+    text-align: center;
+    padding: 0 25px;
+    color: #ffffff;
+    background-color: #9700e3;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: lowercase;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    text-decoration: none;
+}
+
+.cta-btn:first-letter {
+    text-transform: uppercase;
+}
+.cta-btn:hover {
+    color: #ffffff;
+    -webkit-box-shadow: 0px 10px 24px 0px rgba(4, 23, 118, 0.3);
+    -moz-box-shadow: 0px 10px 24px 0px rgba(4, 23, 118, 0.3);
+    box-shadow: 0px 10px 24px 0px rgba(4, 23, 118, 0.3);
+}
+.thumbnail {
+    position: relative;
+    z-index: 1;
+    display: flex !important;
+}
+
+.shape {
+    background-image: url(/assets/img/rectangle-group-2.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    padding: 3%;
+    display: flex;
+}
+
+.shape img {
+    max-width: auto;
+    max-height: 50vh;
+    vertical-align: middle;
+}
+
+@media (max-width: 720px) {
+    .thumbnail {
+        align-items: center !important;
+        margin-top: 2em;
+    }
+
+    .shape img {
+        max-width: 42vw;
+        max-height: auto;
+    }
+}
